@@ -1,0 +1,19 @@
+﻿@using YummyTemplate.Entities;
+@model Chef
+
+<div class="chefsss">
+    <div>
+        <img width="400" height="400" src="~/assets/img/chefs/@Model.Image" class="img-fluid" alt="">
+        <div class="social">
+            <a href="@Model.ChefSocialMedia.TwitterUrl"><i class="bi bi-twitter"></i></a>
+            <a href="@Model.ChefSocialMedia.FbUrl"><i class="bi bi-facebook"></i></a>
+            <a href="@Model.ChefSocialMedia.IgUrl"><i class="bi bi-instagram"></i></a>
+            <a href="@Model.ChefSocialMedia.InUrl"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="member-info">
+        <h4>@Model.Name</h4>
+        <span>@Model.Profession.Name</span>
+        <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+    </div>
+</div>
